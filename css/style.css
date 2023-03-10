@@ -37,7 +37,7 @@ a {
     transition: all .50s ease;
 }
 a:hover {
-    color: #2F8F8D;
+    color: #94BFE0;
 }
 header {
     position: relative;
@@ -72,7 +72,7 @@ header {
     display: none;
 }
 .action_btn {
-    background-color: #2F8F8D;
+    background-color: #94BFE0;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -81,12 +81,12 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2s ease;
-    color: #D9F3F2;
+    color: #fff;
 }
 .action_btn:hover {
     scale: 1.05;
-    background-color: #D9F3F2;
-    color: #2F8F8D;
+    background-color: #496285;
+    color: #fff;
 }
 .action_btn:active {
     scale: 0.95;
@@ -145,6 +145,7 @@ section#hero {
     font-size: 5rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    color: #94BFE0;
 }
 #hero p {
     font-family: 'Sofia Sans', sans-serif;
@@ -180,13 +181,13 @@ section#ceo {
 .right {
     width: 50%;
     min-height: 400px;
-    background-color: #FFF4D2;
+    background-color: #496285;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
     border-radius: 8px;
-    color: #2f3d3c;
+    color: white;
     margin-left: -150px;
     box-shadow: 0px 0px 10px -2px #2f3d3c;
 }
@@ -202,8 +203,8 @@ section#ceo {
 .right a {
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #2f3d3c;
-    color: #FFF4D2;
+    background-color: #E4E8EB;
+    color: #496285;
     padding: 20px 30px;
     display: inline-block;
     letter-spacing: 2px;
@@ -236,7 +237,7 @@ section#partner {
     width: 90%;
     height: auto;
     text-align: center;
-    background: #FFF4D2;
+    background: #496285;
     border-radius: 10px;
 }
 .partner-wrap h1 {
@@ -244,13 +245,13 @@ section#partner {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 50px;
-    color: #2f3d3c;
+    color: white;
 }
 .partner-wrap hr {
     width: 15%;
     height: 5px;
     border: none;
-    background: #2f3d3c;
+    background: white;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -318,7 +319,7 @@ ul {
 .footer {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    background-color: #2f3d3c;
+    background-color: #496285;
     padding: 70px 0px;
 }
 .footer-col {
@@ -352,7 +353,7 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #E4E8EB;
     display: block;
     transition: all 0.3s ease;
 }
@@ -378,7 +379,7 @@ ul {
 }
 .footer-col p {
     margin-top: 10px;
-    color: #bbbbbb;
+    color: #E4E8EB;
     text-align: center;
 
 }
@@ -447,5 +448,8 @@ ul {
     .partner-in ul li {
         width: 90px;
         height: 90px;
+    }
+    .bg-video {
+        height: auto;
     }
 }

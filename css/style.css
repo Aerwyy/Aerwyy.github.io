@@ -451,4 +451,7 @@ ul {
     .bg-video {
         height: auto;
     }
+    header {
+        height: auto;
+    }
 }

@@ -16,26 +16,26 @@
         <div class="navbar">
             <div class="logo"><a href="#">MIKAZUKI WEDDING</a></div>
             <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/service.html">Service</a></li>
-                <li><a href="pages/gallery.html">Gallery</a></li>
-                <li><a href="pages/testimonial.html">Testimonial</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="pages/about.php">About</a></li>
+                <li><a href="pages/service.php">Service</a></li>
+                <li><a href="pages/gallery.php">Gallery</a></li>
+                <li><a href="pages/testimonial.php">Testimonial</a></li>
+                <li><a href="pages/contact.php">Contact</a></li>
             </ul>
-            <a href="pages/login.html" class="action_btn">Log In</a>
+            <a href="pages/login.php" class="action_btn">Log In</a>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
         <div class="dropdown-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/service.html">Service</a></li>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="pages/testimonial.html">Testimonial</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-            <li><a href="pages/login.html" class="action_btn">Log In</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="pages/about.php">About</a></li>
+            <li><a href="pages/service.php">Service</a></li>
+            <li><a href="pages/gallery.php">Gallery</a></li>
+            <li><a href="pages/testimonial.php">Testimonial</a></li>
+            <li><a href="pages/contact.php">Contact</a></li>
+            <li><a href="pages/login.php" class="action_btn">Log In</a></li>
         </div>
     </header>
 

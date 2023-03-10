@@ -1,10 +1,19 @@
+<?php
+session_start();
+include '../connect.php';
+if(!isset($_SESSION['session_user'])) {
+    header("location:../index.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message</title>
+    <title>Dashboard</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
     <link rel="stylesheet" type="text/css" href="../css/trix.css">
     <script type="text/javascript" src="../js/trix.js"></script>
@@ -18,7 +27,7 @@
 </head>
 <body>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../index.html">Dashboard | MKZK</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../index.php">Dashboard | MKZK</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +46,7 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="dashboard.html">
+              <a class="nav-link" aria-current="page" href="dashboard.php">
                 <span data-feather="home"></span>
                 Dashboard
               </a>
@@ -45,25 +54,25 @@
           </ul>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="service-admin.html">
+              <a class="nav-link" href="service-admin.php">
                 <span data-feather="file-text"></span>
                 Service
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery-admin.html">
+              <a class="nav-link" href="gallery-admin.php">
                 <span data-feather="file-text"></span>
                 Gallery
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="testimonial-admin.html">
+                <a class="nav-link" href="testimonial-admin.php">
                   <span data-feather="file-text"></span>
                   Testimonial
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="message-admin.html">
+              <a class="nav-link" href="message-admin.php">
                 <span data-feather="file-text"></span>
                 Message
               </a>
@@ -72,29 +81,12 @@
         </div>
       </nav>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <table class="table table-striped table-sm">
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama Lengkap</th>
-                    <th scope="col">Alamat Email</th>
-                    <th scope="col">Pesan</th>
-                    <th scope="col">Aksi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                          <td>1</td>
-                          <td>Ayana Mikazuki</td>
-                          <td>ayanamikazuki@gmail.com</td>
-                          <td>Some Message That'll Make You Be Mine</td>
-                          <td>
-                          <a href=""><button class="badge bg-danger border-0" onclick="return confirm('Yakin Ingin Dihapus?')"><span data-feather="x-circle"></span>Delete</button></a>
-                          </td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
+          <?php $query = mysqli_query($connect, "SELECT * FROM login ");
+          $row = mysqli_fetch_array($query);
+          ?>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Welcome, <?php echo $row['username']?></h1>
+          </div>
         </main>
       </div>
     </div>

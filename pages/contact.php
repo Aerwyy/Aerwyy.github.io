@@ -13,26 +13,26 @@
         <div class="navbar">
             <div class="logo"><a href="#">MIKAZUKI WEDDING</a></div>
             <ul class="links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="testimonial.html">Testimonial</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="service.php">Service</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="testimonial.php">Testimonial</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
-            <a href="login.html" class="action_btn">Log In</a>
+            <a href="login.php" class="action_btn">Log In</a>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
         <div class="dropdown-menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="testimonial.html">Testimonial</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html" class="action_btn">Log In</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="service.php">Service</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="testimonial.php">Testimonial</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="login.php" class="action_btn">Log In</a></li>
         </div>
     </header>
 

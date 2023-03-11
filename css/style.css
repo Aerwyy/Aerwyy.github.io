@@ -381,7 +381,6 @@ ul {
     margin-top: 10px;
     color: #E4E8EB;
     text-align: center;
-
 }
 /* End Footer */
 
@@ -415,6 +414,19 @@ ul {
     .dropdown-menu {
         left: 2rem;
         width: unset;
+    }
+    #hero h2 {
+        font-size: 1rem;
+    }
+    #hero h1 {
+        font-size: 3rem;
+    }
+    #hero p {
+        font-size: 15px;
+    }
+    .partner-wrap h1 {
+        font-size: 30px;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 768px) {

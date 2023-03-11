@@ -1,3 +1,12 @@
+<?php
+session_start();
+include '../connect.php';
+if(!isset($_SESSION['session_user'])) {
+    header("location:../index.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,13 +98,13 @@
                     </tr>
                   </thead>
                   <tbody>
-                  <!-- <?php 
+                  <?php 
                   $query = mysqli_query($connect, "SELECT * FROM gallery ");
                   while ($row = mysqli_fetch_array($query)) {
                   ?>
                     <tr>
                             <td><?php echo $row['id_gambar']?></td>
-                            <td><img src="asset/img/gallery/<?php echo $row['gambar']?>" alt="" width="600px" height="300px"></td>
+                            <td><img src="../images/<?php echo $row['gambar']?>" alt="" width="600px" height="300px"></td>
                             <td><?php echo $row['judul_gambar']?></td>
                             <td><?php echo $row['keterangan_gambar']?></td>
                             <td>
@@ -104,7 +113,7 @@
                                 </form>
                             </td>
                     </tr>
-                  <?php } ?> -->
+                  <?php } ?>
                   </tbody>
                 </table>
                 </div>

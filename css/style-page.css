@@ -393,40 +393,6 @@ section#goals-mw {
     border-radius: 10px;
     transition: .5s;
 }
-.pic::before {
-    content: 'PHOTO GALLERY';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    width: 100%;
-    margin-top: -100px;
-    opacity: 0;
-    transition: .3s;
-    transition-delay: .2s;
-    z-index: 1;
-}
-.pic:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    height: 0;
-    background-color: rgba(0,0,0,0.4);
-    transition: .3s;
-}
-.pic:hover:after {
-    height: 100%;
-}
-.pic:hover::before {
-    margin-top: 0;
-    opacity: 1;
-}
 /* End Gallery */
 
 /* Testimonial */

@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../connect.php';
+include 'function.php';
 $data = mysqli_query($connect, "SELECT * FROM gallery WHERE id_gambar = '".$_GET['id']."'");
 $read = mysqli_fetch_array($data);
 
@@ -116,35 +117,7 @@ if(!isset($_SESSION['session_user'])) {
     </div>
     <?php
 if(isset($_POST['create'])) {
-  $gambar = $_FILES['image']['name'];
-  $source = $_FILES['image']['tmp_name'];
-  $folder = '../images/';
-  $judul_gambar = $_POST['title'];
-  $keterangan_gambar = $_POST['description'];
-
-  if($gambar != '') {
-    move_uploaded_file($source, $folder.$gambar);
-    $update = mysqli_query($connect, "UPDATE gallery SET gambar = '".$gambar."' , judul_gambar = '".$judul_gambar."', keterangan_gambar = '".$keterangan_gambar."'WHERE id_gambar = '".$_GET['id']."'");
-    if($update) {
-      header("location:gallery-admin.php");
-    } else {
-      header("location:edit-gallery.php");
-    }
-  } else if($judul_gambar != '') {
-    $update = mysqli_query($connect, "UPDATE gallery SET judul_gambar = '".$judul_gambar."', keterangan_gambar = '".$keterangan_gambar."'WHERE id_gambar = '".$_GET['id']."'");
-    if($update) {
-      header("location:gallery-admin.php");
-    } else {
-      header("location:edit-gallery.php");
-    }
-  } else if($keterangan_gambar != '') {
-    $update = mysqli_query($connect, "UPDATE gallery SET keterangan_gambar = '".$keterangan_gambar."'WHERE id_gambar = '".$_GET['id']."'");
-    if($update) {
-      header("location:gallery-admin.php");
-    } else {
-      header("location:edit-gallery.php");
-    }
-  }
+  edit_data($_POST);
 }
 ?>
 

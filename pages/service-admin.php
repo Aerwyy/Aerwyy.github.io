@@ -81,7 +81,42 @@ if(!isset($_SESSION['session_user'])) {
         </div>
       </nav>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Posting Layanan Terbaru</h1>
+            </div>
             
+            <div class="table-responsive col-lg-8">
+              <a href="create-service.php" class="btn btn-primary mb-3">Post Layanan</a>
+                <table class="table table-striped table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col">Gambar</th>
+                      <th scope="col">Nama Layanan</th>
+                      <th scope="col">Keterangan Layanan</th>
+                      <th scope="col">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <?php 
+                  $query = mysqli_query($connect, "SELECT * FROM service ");
+                  while ($row = mysqli_fetch_array($query)) {
+                  ?>
+                    <tr>
+                            <td><?php echo $row['id_gambar']?></td>
+                            <td><img src="../images/<?php echo $row['gambar']?>" alt="" width="600px" height="300px"></td>
+                            <td><?php echo $row['judul_service']?></td>
+                            <td><?php echo $row['keterangan_service']?></td>
+                            <td>
+                                <a href="edit-service.php?id=<?php echo $row['id_gambar']?>" class="badge bg-warning btn btn-warning"><span data-feather="edit"></span>Edit</a>
+                                <a href="delete-service.php?id=<?php echo $row['id_gambar']?>"><button class="badge bg-danger border-0" onclick="return confirm('Yakin Ingin Dihapus?')"><span data-feather="x-circle"></span>Delete</button></a>
+                                </form>
+                            </td>
+                    </tr>
+                  <?php } ?>
+                  </tbody>
+                </table>
+                </div>
         </main>
       </div>
     </div>

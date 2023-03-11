@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../connect.php';
+include 'function.php';
 if(!isset($_SESSION['session_user'])) {
     header("location:../index.php");
     exit();
@@ -108,14 +109,7 @@ if(!isset($_SESSION['session_user'])) {
     </div>
     <?php
 if(isset($_POST['create'])) {
-  $gambar = $_FILES['image']['name'];
-  $source = $_FILES['image']['tmp_name'];
-  $folder = '../images/';
-  $judul_gambar = $_POST['title'];
-  $keterangan_gambar = $_POST['description'];
-
-  move_uploaded_file($source, $folder.$gambar);
-  $insert = mysqli_query($connect, "INSERT INTO gallery VALUES(NULL, '$gambar', '$judul_gambar', '$keterangan_gambar')");
+  create_data($_POST);
 }
 ?>
 

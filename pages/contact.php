@@ -1,3 +1,8 @@
+<?php
+include '../connect.php';
+include 'function.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,12 +48,17 @@
         </div>
         <div class="contact-form">
           <h1>Contact Us</h1>
-          <form action="">
-            <input type="text" placeholder="Name" class="contact-form-txt" />
-            <input type="email" placeholder="Email" class="contact-form-txt" />
-            <textarea name="" id="" placeholder="Message" class="contact-form-txtarea"></textarea>
-            <input type="submit" name="Submit" class="contact-form-btn" />
+          <form action="" method="post">
+            <input type="text" name="name" id="name" placeholder="Name" class="contact-form-txt" />
+            <input type="email" name="email" id="email" placeholder="Email" class="contact-form-txt" />
+            <textarea name="message" id="message" placeholder="Message" class="contact-form-txtarea"></textarea>
+            <input type="submit" name="create" id="create" class="contact-form-btn" />
           </form>
+<?php
+if(isset($_POST['create'])) {
+  create_message($_POST);
+}
+?>
         </div>
       </div>
     </section>

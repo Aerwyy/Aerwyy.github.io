@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/style-page.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,7 +19,7 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
+      <div class="navbar" data-aos="fade-down">
         <div class="logo"><a href="#">MIKAZUKI WEDDING</a></div>
         <ul class="links">
           <li><a href="../index.html">Home</a></li>
@@ -45,7 +46,7 @@
     </header>
 
     <section class="testi">
-      <div class="testimonial mySwiper">
+      <div class="testimonial mySwiper" data-aos="fade-up">
         <div class="s-heading-testi">
           <h1>TESTIMONIAL</h1>
           <p>What Our Customers Say?</p>
@@ -100,39 +101,39 @@
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonial</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="testimonial.html">Testimonial</a></li>
+              <li><a href="testimonial.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Get Help</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Order Status</a></li>
-              <li><a href="#">Payment Options</a></li>
+              <li><a href="about.html#history-mw">History</a></li>
+              <li><a href="gallery.html">Documentation</a></li>
+              <li><a href="contact.html">Ask Question</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Online Shop</h4>
+            <h4>Partners</h4>
             <ul>
-              <li><a href="#">Watch</a></li>
-              <li><a href="#">Bag</a></li>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Dress</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/Google">Google</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/Gojek">GoJek</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/GitHub">Github</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/YouTube">YouTube</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/PayPal">PayPal</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/Microsoft">Microsoft</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCdMLfoRwFXX-CkuujTfVWFw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://twitter.com/AyanaMKZK" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/aryaaprdna_/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/Aerwyy" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             <p>&copy;Copyright 2023. Mikazuki Foundation. All Rights Reserved.</p>
           </div>
@@ -140,6 +141,10 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
   </body>

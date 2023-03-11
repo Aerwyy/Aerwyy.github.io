@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mikazuki Wedding</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -19,7 +20,7 @@
       <source src="hero-vid.mp4" />
     </video>
     <header>
-      <div class="navbar">
+      <div class="navbar" data-aos="fade-down">
         <div class="logo"><a href="#">MIKAZUKI WEDDING</a></div>
         <ul class="links">
           <li><a href="index.html">Home</a></li>
@@ -46,7 +47,7 @@
     </header>
 
     <main>
-      <section id="hero">
+      <section id="hero" data-aos="fade-up">
         <h2>Welcome To</h2>
         <h1>Mikazuki Wedding</h1>
         <p>
@@ -56,8 +57,8 @@
       </section>
       <section id="ceo">
         <div class="ceo">
-          <div class="left"></div>
-          <div class="right">
+          <div class="left" data-aos="fade-right"></div>
+          <div class="right" data-aos="fade-left">
             <div class="content">
               <h1>Ayana Mikazuki</h1>
               <h2>Chief Executive Officer</h2>
@@ -71,7 +72,7 @@
         </div>
       </section>
       <section id="partner">
-        <div class="partner-wrap">
+        <div class="partner-wrap" data-aos="fade-up">
           <h1>Our Partners</h1>
           <hr />
           <div class="partner-in">
@@ -93,12 +94,12 @@
                 <img src="images/youtube.png" alt="" />
               </li>
               <li>
-                <img src="images/youtube-h.png" alt="" />
-                <img src="images/youtube.png" alt="" />
+                <img src="images/paypal-h.png" alt="" />
+                <img src="images/paypal.png" alt="" />
               </li>
               <li>
-                <img src="images/youtube-h.png" alt="" />
-                <img src="images/youtube.png" alt="" />
+                <img src="images/microsoft-h.png" alt="" />
+                <img src="images/microsoft.png" alt="" />
               </li>
             </ul>
           </div>
@@ -112,39 +113,39 @@
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonial</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/service.html">Service</a></li>
+              <li><a href="pages/gallery.html">Gallery</a></li>
+              <li><a href="pages/testimonial.html">Testimonial</a></li>
+              <li><a href="pages/testimonial.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Get Help</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Order Status</a></li>
-              <li><a href="#">Payment Options</a></li>
+              <li><a href="pages/about.html#history-mw">History</a></li>
+              <li><a href="pages/gallery.html">Documentation</a></li>
+              <li><a href="pages/contact.html">Ask Question</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Online Shop</h4>
+            <h4>Partners</h4>
             <ul>
-              <li><a href="#">Watch</a></li>
-              <li><a href="#">Bag</a></li>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Dress</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/Google">Google</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/Gojek">GoJek</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/GitHub">Github</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/YouTube">YouTube</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/PayPal">PayPal</a></li>
+              <li><a href="https://id.wikipedia.org/wiki/Microsoft">Microsoft</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCdMLfoRwFXX-CkuujTfVWFw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://twitter.com/AyanaMKZK" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/aryaaprdna_/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/Aerwyy" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             <p>&copy;Copyright 2023. Mikazuki Foundation. All Rights Reserved.</p>
           </div>
@@ -152,6 +153,10 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

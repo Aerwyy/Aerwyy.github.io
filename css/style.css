@@ -3,6 +3,9 @@
 html::-webkit-scrollbar {
     display: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -43,13 +46,13 @@ header {
     position: relative;
     padding: 0 2rem;
 }
-.nav-container {
+.nav-container-left {
     z-index: 1;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
 }
-.nav-container a {
+.nav-container-left a {
     font-family: 'Poppins';
     display: block;
     text-decoration: none;
@@ -67,7 +70,7 @@ header {
     transition: 0.5s ease;
     border-radius: 0 10px 10px 0;
 }
-.nav-container a span {
+.nav-container-left a span {
     float: right;
     width: 70px;
     height: 100%;
@@ -80,11 +83,56 @@ header {
     top: 0;
     border-radius: 0 10px 10px 0;
 }
-.nav-container a span i {
+.nav-container-left a span i {
     font-size: 20px;
 }
-.nav-container a:hover {
+.nav-container-left a:hover {
     margin-left: 0px;
+}
+.nav-container-right {
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.nav-container-right a {
+    font-family: 'Poppins';
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    background: #fff;
+    color: #94BFE0;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 10px 15px 0;
+    margin: 5px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75);
+    position: relative;
+    margin-right: -90px;
+    transition: 0.5s ease;
+    border-radius: 10px 0 0 10px;
+}
+.nav-container-right a span {
+    float: left;
+    width: 70px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #496285;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+}
+.nav-container-right a span i {
+    font-size: 20px;
+}
+.nav-container-right a:hover {
+    margin-right: 0px;
 }
 .navbar {
     width: 100%;
@@ -511,7 +559,7 @@ ul {
     header {
         height: auto;
     }
-    .nav-container {
+    .nav-container-left, .nav-container-right {
         display: none;
     }
 }
